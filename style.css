@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#main #navbar {
+    width: 100%;
+    height: 10%;
+}
+
+#main .left-div-main {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#main .left-div-main #navbar {
+    width: 100%;
+    height: 10%;
+}
+
+#main .left-div-main #navbar .navbar-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main .left-div-main #navbar .navbar-menu .left-menu {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .left-div-main #navbar .navbar-menu .ri-arrow-left-line {
+    color: #8e8b8b;
+    font-size: 25px;
+}
+
+#main .left-div-main #navbar .navbar-menu .ri-arrow-left-line:hover {
+    color: black;
+}
+
+#main .left-div-main #navbar .navbar-menu .right-menu {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main .left-div-main #navbar .navbar-menu .right-menu h5 {
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#main .left-div-main #navbar .navbar-menu .right-menu h5 a {
+    color: #8e8b8b;
+    text-decoration: none;
+}
+
+#main .left-div-main #navbar .navbar-menu .right-menu a:hover {
+    color: black;
+    border-bottom: 2px solid #8e8b8b;
+}
+
+#main .left-div-main #navbar .navbar-menu .ri-twitter-fill {
+    color: #1DA1F2;
+    font-size: 25px;
+}
+#main .left-div-main #navbar .navbar-menu .ri-twitter-fill:hover{
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#main .left-div-main .container {
+    padding: 70px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .left-div-main .container .container-text {
+    font-family: "Open Sans", sans-serif;
+}
+
+#main .left-div-main .container .container-text h1 {
+    font-size: 80px;
+}
+
+#main .left-div-main .container .container-text p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #8e8b8b;
+}
+
+#main .left-div-main .container .container-text button {
+    margin-top: 30px;
+    color: #8e8b8b;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid white;
+    background: none;
+}
+
+#main .left-div-main .container .container-text button:hover {
+    color: black;
+    border-bottom: 2px solid #8e8b8b;
+}
+
+#main .right-div-main {
+    width: 60%;
+    height: 100%;
+    background-color: red;
+}
+
+.right-div-main .upper-div {
+    background-color: pink;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.right-div-main .upper-div .upper-left-div {
+    width: 50%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.right-div-main .upper-div .upper-right-div {
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+    background-image: url('https://images.unsplash.com/photo-1691503519454-c2bebab4b88b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-div-main .bottom-div {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+    background-image: url('https://plus.unsplash.com/premium_photo-1720552289113-c799bbfb7675?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:770px) {
+    #main {
+     flex-direction: column;
+    }
+    #main .left-div-main {
+        width: 100%;
+    }
+    #main .right-div-main {
+        width: 100%;
+    }  
+}
